@@ -55,7 +55,6 @@ public class AllScoreActivity extends Activity implements OnChildClickListener,
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_grade_list);
 		app = (MyApplication) getApplication();
