@@ -20,4 +20,5 @@ public class AboutActivity extends Activity {
 	}
 	//hello
 	//other
+	//other
 }
