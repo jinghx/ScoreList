@@ -5,10 +5,10 @@ import java.util.List;
 
 import org.apache.http.cookie.Cookie;
 
-import com.jing.bean.People;
-
 import android.app.Activity;
 import android.app.Application;
+
+import com.jing.bean.People;
 
 public class MyApplication extends Application {
 	private List<Cookie> cookies = null; 
