@@ -6,8 +6,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
-import com.example.scorelist.R;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -15,6 +13,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.Window;
 import android.widget.TextView;
+
+import com.example.scorelist.R;
 
 public class CalculateTypeDetail extends Activity {
 	

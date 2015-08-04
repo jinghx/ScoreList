@@ -4,13 +4,8 @@ import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.example.scorelist.R;
-import com.jing.score.MainActivity;
 import com.jing.service.StartListenService;
 import com.jing.utils.ServiceUtils;
 
