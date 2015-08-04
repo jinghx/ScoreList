@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="maincolor">#61cbda</color>
+    <color name="white">#ffffff</color>
+    <drawable name="file_list_item_press">#146467</drawable>
+    <drawable name="file_list_item_normal">#137377</drawable>
+</resources>

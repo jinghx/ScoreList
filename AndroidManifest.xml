@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scorelist"
+    android:versionCode="3"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.perminssion.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.jing.score.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jing.score.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.jing.score.WelcomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jing.test.TestActivity" >
+        </activity>
+        <activity android:name="com.jing.score.AllScoreActivity" >
+        </activity>
+        <activity android:name="com.jing.score.CurrentScoreActivity" >
+        </activity>
+        <activity android:name="com.jing.score.AverageActivity" >
+        </activity>
+        <activity android:name="com.jing.score.PersonalActivity" >
+        </activity>
+        <activity android:name="com.jing.score.AboutActivity" >
+        </activity>
+        <activity android:name="com.jing.score.LoginActivity" >
+        </activity>
+        <activity android:name="com.jing.score.CalculateTypeDetail" >
+        </activity>
+        <activity android:name="com.jing.score.CalculatedCourseDetail" >
+        </activity>
+
+        <receiver android:name="com.jing.broadcast.StartBroadcast" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.jing.service.StartListenService"
+            android:exported="false"
+            android:process=":StartListenService" >
+            <intent-filter android:priority="1000" >
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="549be5d556240b5230000009" >
+        </meta-data>
+    </application>
+
+</manifest>

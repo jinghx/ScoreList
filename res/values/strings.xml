@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">超级成绩单</string>
+    <string name="app_descripe1">欢迎您使用超级成绩单v1.0</string>
+    <string name="app_descripe2">请关注我们的QQ群421706891</string>
+    <string name="app_descripe3">我们将会进行颠覆性功能创新</string>
+    <string name="app_descripe4">敬请期待</string>
+    <string name="action_about">关于我们</string>
+    <string name="app_about1">开发人员:</string>
+    <string name="app_about2">景海祥,张晓佩,宫晓威,李婧慧</string>
+    <string name="app_about3">市场与运营:</string>
+    <string name="app_about4">程志欣</string>
+    <string name="app_about5">18369189870</string>
+    <string name="app_about6">QQ群:421706891</string>
+    <string name="app_about7">加入我们，期待你宝贵的意见</string>
+
+    <string-array name="calcul_details">
+        <item>(1)标准4.0\n
+			100～90	4.0\n
+			89～80	3.0\n
+			79～70	2.0\n
+			69～60	1.0\n
+			59～0	0\n
+		</item>
+    </string-array>
+
+</resources>

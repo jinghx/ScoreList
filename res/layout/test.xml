@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/test_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="新成绩提醒服务"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_title"
+        android:layout_marginTop="15dp"
+        android:text="发送广播"
+        android:visibility="gone" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_broadcast"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="开启服务" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_stop_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_start_service"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="停止服务" >
+    </Button>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_stop_service"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="清除缓存" >
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clear"
+        android:layout_marginTop="15dp"
+        android:text="\u3000\u3000提示:若服务无法正常开启，请尝试在手机设置中开启自启权限" />
+
+</RelativeLayout>

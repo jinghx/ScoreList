@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LL_avg_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="30"
+    style="@android:style/Theme.Translucent.NoTitleBar" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" 
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/txt_cal_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15sp"         
+            android:padding="30dp"
+            />
+    </ScrollView>
+
+</LinearLayout>

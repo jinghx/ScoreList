@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/main_score_tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 头部导航 -->
+        <!-- 镶嵌线性布局 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_top_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/bg_actionbar"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/iv_person"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/welcome" />
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/recentbox"
+                        android:gravity="center" >
+                    </TabWidget>
+                    <TextView
+                        android:id="@+id/tv_calculate_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="绩点" />
+                    <TextView
+                        android:id="@+id/tv_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_calculate_score"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="服务" 
+                        android:visibility="gone"/>
+                    
+                    
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" >
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LL_avg_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="30"
+    android:background="#b0000000" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp" 
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/txt_avg_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="成绩单" />
+    </ScrollView>
+
+</LinearLayout>
